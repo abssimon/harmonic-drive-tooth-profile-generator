@@ -1,0 +1,7 @@
+Nur punkte L....
+
+circle struct
+
+1. getwTangentCoordinates(x1, y1, r1, startd1, x2, y2, r2, startd2, mode) // d ist die gradzahl die den anschlusspunkt markiert, mode
+
+2. getCircleCoordinates(x, y, r, fromD, toD)

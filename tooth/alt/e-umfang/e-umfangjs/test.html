@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript: Hallo Welt</title>
+    <script>
+var algo=2;
+var rd=10000000000000,tf=Math.PI/180,pi=Math.PI;
+    function ellipsenumfang(a,b)
+	{
+		if(a<b){var t=a;a=b;b=t;}
+		if(b==0)return 2*a;
+		if(isNaN(a*b))return;
+		if(b/a<0.3)return ellipsenumfang3(a,b);
+		if(algo==2)return ellipsenumfang2(a,b);if(algo==3)return ellipsenumfang3(a,b);
+		var ee=1-b*b/(a*a),u=1,uu=1,f1=1,f2=1,i,dmin=1e-200,d;
+		for(i=1;i<1000;i+=2)
+		{
+			f1*=i/(i+1);f2*=ee;
+			u-=f1*f1*f2/i;
+			if((d=Math.abs(u-uu))<dmin)break;
+			uu=u;
+		}
+		r=Number("100000000000000000000".substr(0,Math.floor(-Math.log(d)/Math.log(10))));
+		u=Math.round(u*2*Math.PI*a*r)/r;
+		//alert(i+"\n"+r+"\n"+d);
+		return u;
+	}
+	function ellipsenumfang2(a,b)
+	{
+		var h=((a-b)*(a-b))/((a+b)*(a+b)), s=0, x=1, n=1, ss=-1;
+		do{
+			x*=h*((n-1.5)/n)*((n-1.5)/n);
+			ss=s;
+			s+=x;
+			n++;
+		}
+		while(ss!=s);
+		return pi*(a+b)*(s+1);
+	}
+	function ellipsenumfang3(a,b)
+	{
+		var x=(b*b)/(a*a),y=Math.log(16/x)-1,t=x/4,n=1,z=0,zz=-1,u=t*y,v=(n-0.5)/n,w=0.5/((n-0.5)*n);
+		do{zz=z;z+=u;n++;t*=x*v;v=(n-0.5)/n;t*=v;y-=w;w=0.5/((n-0.5)*n);y-=w;u=t*y;}while(zz!=z);
+		return 4*a*(z+1);
+}
+
+      alert(ellipsenumfang(150.0,140.0));
+    </script>
+    <noscript>
+      Sie haben JavaScript deaktiviert.
+    </noscript>
+  </head>
+  <body>
+    <p>Diese Seite tut nichts weiter, als eine Hinweisbox auszugeben.</p>
+  </body>
+</html>

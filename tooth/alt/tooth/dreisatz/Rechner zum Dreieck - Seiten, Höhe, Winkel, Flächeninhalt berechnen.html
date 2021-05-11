@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="de"><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <!--<meta charset="UTF-8">     //-->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>
+Rechner zum Dreieck - Seiten, Höhe, Winkel, Flächeninhalt berechnen
+</title>
+    <meta name="description" content="Dieser Rechner berechnet alle Längen, Winkel und den Flächeninhalt vom Dreieck. Mit Erklärungen und Zwischenschritten.">
+<meta name="Keywords" content="dreieck, sinus, cosinus, tangens, alpha, beta, gamma, a, b, c, hoehe, seitenhalbierende, flaecheninhalt, umfang, winkel, winkelhalbierende, seite, seiten, schwerelinie, flächeninhalt, höhe, berechnen, ausrechnen, geometrie, formel, formeln, geometrische, berechnung, berechnungen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="canonical" href="https://www.mathepower.com/dreieck.php">
+<link rel="alternate" hreflang="x-default" href="https://www.mathepower.com/dreieck.php">
+<link rel="alternate" hreflang="de" href="https://www.mathepower.com/dreieck.php"> 
+<link rel="alternate" hreflang="en" href="https://www.mathepower.com/en/triangle.php">
+<link rel="alternate" hreflang="it" href="https://www.mathepower.com/it/triangolo.php">
+<link rel="alternate" hreflang="fr" href="https://www.mathepower.com/fr/triangle.php">
+<link rel="alternate" hreflang="ar" href="https://www.mathepower.com/ar/triangle.php">
+<link rel="alternate" hreflang="hi" href="https://www.mathepower.com/hi/triangle.php">
+<link rel="alternate" hreflang="zh" href="https://www.mathepower.com/cn/san1jiao3xing2.php">
+<link rel="alternate" hreflang="nl" href="https://www.mathepower.com/nl/driehoek.php">
+<link rel="alternate" hreflang="es" href="https://www.mathepower.com/es/triangulo.php">
+<link rel="alternate" hreflang="pt" href="https://www.mathepower.com/pt/triangulo.php">
+    <link rel="stylesheet" href="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/bootstrap.css">
+    <link rel="stylesheet" href="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/bootstrap-theme.css">
+    <link rel="stylesheet" href="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/main.css">
+    <script async="" src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/async-ads.js"></script><script src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/cbgapi.loaded_1" async=""></script><script src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/cbgapi.loaded_0" async=""></script><script async="" src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/analytics.js"></script><script src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/jquery-ui.js"></script>
+    <script src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/jquery.js"></script>
+    <script src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/platform.js" async="" defer="defer" gapi_processed="true">{lang: 'de'}</script>
+    <!-- Funktion, dass man Zwischenschritt-Ansichten umschalten kann //-->
+    <script language="JavaScript">
+<!--
+ function umschalt() {
+
+  var elementNames = umschalt.arguments;
+  for (var i=0; i<elementNames.length; i++)
+   {
+     var elementName = elementNames[i];
+
+     if(document.getElementById(elementName).style.display=='none') document.getElementById(elementName).style.display='block';
+     else document.getElementById(elementName).style.display='none';
+   }
+ }
+//-->
+</script>
+<script src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/yieldlove-bidder.js"></script>
+<script async="async" src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/gpt.js"></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  googletag.cmd.push(function() {
+    googletag.pubads().disableInitialLoad();
+    googletag.enableServices();
+  });
+</script>
+
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<script src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/cse_element__de.js" type="text/javascript"></script><link type="text/css" rel="stylesheet" href="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/defaultde.css"><link type="text/css" rel="stylesheet" href="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/default.css"><style type="text/css">.gsc-control-cse{font-family:arial, sans-serif}.gsc-control-cse .gsc-table-result{font-family:arial, sans-serif}.gsc-refinementsGradient{background:linear-gradient(to left,rgba(255,255,255,1),rgba(255,255,255,0))}</style><style type="text/css">.gscb_a{display:inline-block;font:27px/13px arial,sans-serif}.gsst_a .gscb_a{color:#a1b9ed;cursor:pointer}.gsst_a:hover .gscb_a,.gsst_a:focus .gscb_a{color:#36c}.gsst_a{display:inline-block}.gsst_a{cursor:pointer;padding:0 4px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 2px;position:relative;user-select:none;-moz-user-select:none;white-space:nowrap}.gsst_e{vertical-align:middle;opacity:0.55;}.gsst_a:hover .gsst_e,.gsst_a:focus .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsst_f{background:white;text-align:left}.gsst_g{background-color:white;border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-moz-box-shadow:0 2px 4px rgba(0,0,0,0.2);margin:-1px -3px;padding:0 6px}.gsst_h{background-color:white;height:1px;margin-bottom:-1px;position:relative;top:-1px}.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-moz-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsdd_a{border:none!important}.gsq_a{padding:0}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_m{color:#000;background:#fff}.gssb_a{padding:0 9px}.gsib_a{padding:5px 9px 4px 9px}.gscb_a{line-height:27px}.gssb_e{border:0}.gssb_l{margin:5px 0}input.gsc-input::-webkit-input-placeholder{font-size:14px}input.gsc-input:-moz-placeholder{font-size:14px}input.gsc-input::-moz-placeholder{font-size:14px}input.gsc-input:-ms-input-placeholder{font-size:14px}input.gsc-input:focus::-webkit-input-placeholder{color:transparent}input.gsc-input:focus:-moz-placeholder{color:transparent}input.gsc-input:focus::-moz-placeholder{color:transparent}input.gsc-input:focus:-ms-input-placeholder{color:transparent}.gssb_c .gsc-completion-container{position:static}.gssb_c{z-index:5000}.gsc-completion-container table{background:transparent;font-size:inherit;font-family:inherit}.gssb_c > tbody > tr,.gssb_c > tbody > tr > td,.gssb_d,.gssb_d > tbody > tr,.gssb_d > tbody > tr > td,.gssb_e,.gssb_e > tbody > tr,.gssb_e > tbody > tr > td{padding:0;margin:0;border:0}.gssb_a table,.gssb_a table tr,.gssb_a table tr td{padding:0;margin:0;border:0}</style></head>
+
+<body>
+<script language="JavaScript"><!--
+
+/*function bo(name) {
+  bild=new Image();
+  if(name=="def") adr="geopics/dr.gif";
+  else adr="geopics/dr_"+name+".gif";
+  bild.src=adr;
+  top.document.obenpic.src=bild.src;
+} */
+function bu(name) {
+  bild=new Image();
+  if(name=="def") adr="geopics/dr.gif";
+  else adr="geopics/dr_"+name+".gif";
+  bild.src=adr;
+  top.document.mainpic.src=bild.src;
+}
+function f(name) {
+  bild=new Image();
+  if(name=="def") adr="geopics/dr.gif";
+  else adr="geopics/dr_"+name+".gif";
+  top.document.obenpic.src=adr;
+}
+function fk(name) {
+  bild=new Image();
+  if(name=="def") adr="geopics/dr.gif";
+  else adr="geopics/dr_"+name+".gif";
+  top.document.kernelpic.src=adr;
+}
+//--></script>
+
+
+<div class="sticky">
+             <!-- Yieldlove AdTag - mathepower.com - responsive -->
+<div id="div-gpt-ad-1407836241720-0">
+  <script type="text/javascript">
+    if (window.innerWidth < 768) {
+      googletag.cmd.push(function() {
+        googletag.defineSlot('/53015287/mathepower.com_m_320x50_1', [320, 50], 'div-gpt-ad-1407836241720-0').addService(googletag.pubads());
+        googletag.display('div-gpt-ad-1407836241720-0');
+      });
+    }
+  </script>
+</div>
+           </div>
+
+
+<!--  Ã„uÃŸerer Container -->
+    <div id="site" class="container">
+
+        <!--  Banner 728 x 90 Container -->
+        <div class="text-right banner728">
+         <!-- Yieldlove AdTag - mathepower.com - responsive -->
+<div id="div-gpt-ad-1407836059225-0">
+  <script type="text/javascript">
+    if (window.innerWidth >= 740) {
+      googletag.cmd.push(function() {
+        googletag.defineSlot('/53015287/mathepower.com_d_728x90_1', [728, 90], 'div-gpt-ad-1407836059225-0').addService(googletag.pubads());
+        googletag.display('div-gpt-ad-1407836059225-0');
+      });
+    }
+
+if (window.innerWidth < 740) {
+      googletag.cmd.push(function() {
+        googletag.defineSlot('/53015287/mathepower.com_m_300x250_1', [300, 250], 'div-gpt-ad-1407836059225-0').addService(googletag.pubads());
+        googletag.display('div-gpt-ad-1407836059225-0');
+      });
+    }
+  </script>
+<div></div></div>
+
+
+
+
+
+        </div>
+        <div id="skyscraper " class="banner skyscrapernew visible-lg visible-md">
+
+
+       <!-- Yieldlove AdTag - mathepower.com - responsive -->
+<div id="div-gpt-ad-1407836169850-0">
+  <script type="text/javascript">
+    if (window.innerWidth >= 1300) {
+      googletag.cmd.push(function() {
+        googletag.defineSlot('/53015287/mathepower.com_d_300x600_1', [[300, 600], [160, 600], [300, 250]], 'div-gpt-ad-1407836169850-0').addService(googletag.pubads());
+        googletag.display('div-gpt-ad-1407836169850-0');
+      });
+    }
+
+if (window.innerWidth < 1300 && window.innerWidth >= 992) {
+      googletag.cmd.push(function() {
+        googletag.defineSlot('/53015287/mathepower.com_d_160x600_2', [160, 600], 'div-gpt-ad-1407836169850-0').addService(googletag.pubads());
+        googletag.display('div-gpt-ad-1407836169850-0');
+      });
+    }
+  </script>
+<div></div></div>
+
+
+        </div>
+        <!--  Kopfbereich Container -->
+        <div id="page-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <!--  Spaltenaufteilung  in den verschiedenen Auflösungen info unter
+                        http://getbootstrap.com/css/#grid-options
+                    -->
+
+                    <div class="col-lg-3 col-sm-4 col-xs-6 col-xxs-12">
+                        <div class="logo padding-top"><a href="https://www.mathepower.com/index.html"><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/Logo_MP-02.png" alt="Matheaufgaben online lösen ! mathepower.com"></a></div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 col-xxs-12 padding-top"></div>
+                    <div class="col-lg-3 col-sm-4 col-md-4 col-xs-6 col-xxs-12 col-xs-offset-0 col-lg-offset-3 col-sm-offset-0 col-md-offset-0 padding-top">
+                    <!--<div class="col-lg-3 col-sm-4 col-md-4 col-xs-6 col-xxs-12 col-xs-offset-0 col-lg-offset-6 col-sm-offset-4 col-md-offset-4 padding-top">//-->
+<script async="" src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/cse.js"></script><div id="___gcse_0"><div class="gsc-control-searchbox-only gsc-control-searchbox-only-de" dir="ltr"><form class="gsc-search-box gsc-search-box-tools" accept-charset="utf-8"><table class="gsc-search-box" cellspacing="0" cellpadding="0"><tbody><tr><td class="gsc-input"><div class="gsc-input-box" id="gsc-iw-id1"><table style="width: 100%; padding: 0px;" id="gs_id50" class="gstl_50 gsc-input" cellspacing="0" cellpadding="0"><tbody><tr><td id="gs_tti50" class="gsib_a"><input autocomplete="off" type="text" size="10" class="gsc-input" name="search" title="suchen" style="width: 100%; padding: 0px; border: medium none; margin: 0px; height: auto; background: rgb(255, 255, 255) url(&quot;https://www.google.com/cse/static/images/1x/de/branding.png&quot;) no-repeat scroll left center; outline: currentcolor none medium;" id="gsc-i-id1" dir="ltr" spellcheck="false"></td><td class="gsib_b"><div class="gsst_b" id="gs_st50" dir="ltr"><a class="gsst_a" href="javascript:void(0)" style="display: none;" title="Suchfeldeingaben löschen" role="button"><span class="gscb_a" id="gs_cb50" aria-hidden="true">×</span></a></div></td></tr></tbody></table></div></td><td class="gsc-search-button"><button class="gsc-search-button gsc-search-button-v2"><svg width="13" height="13" viewBox="0 0 13 13"><title>suchen</title><path d="m4.8495 7.8226c0.82666 0 1.5262-0.29146 2.0985-0.87438 0.57232-0.58292 0.86378-1.2877 0.87438-2.1144 0.010599-0.82666-0.28086-1.5262-0.87438-2.0985-0.59352-0.57232-1.293-0.86378-2.0985-0.87438-0.8055-0.010599-1.5103 0.28086-2.1144 0.87438-0.60414 0.59352-0.8956 1.293-0.87438 2.0985 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438zm4.4695 0.2115 3.681 3.6819-1.259 1.284-3.6817-3.7 0.0019784-0.69479-0.090043-0.098846c-0.87973 0.76087-1.92 1.1413-3.1207 1.1413-1.3553 0-2.5025-0.46363-3.4417-1.3909s-1.4088-2.0686-1.4088-3.4239c0-1.3553 0.4696-2.4966 1.4088-3.4239 0.9392-0.92727 2.0864-1.3969 3.4417-1.4088 1.3553-0.011889 2.4906 0.45771 3.406 1.4088 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 0 1.2126-0.38043 2.2588-1.1413 3.1385l0.098834 0.090049z"></path></svg></button></td><td class="gsc-clear-button"><div class="gsc-clear-button" title="Ergebnisse löschen">&nbsp;</div></td></tr></tbody></table></form></div></div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="contentContainer" class="container-fluid">
+            <div class="jumbotron padding-top" style="background-image:url('xd/superhero.png'),url('xd/hero-bg-green.png'); background-size:40%,auto; background-position: top right, center">
+                <div class="container">
+                    <h1 class="ueberschrift" style="color: #385170">
+
+Dreieck
+
+                    </h1>
+
+                </div>
+            </div>
+            <div class="row">
+              <!-- Yieldlove AdTag - mathepower.com - responsive -->
+<div id="div-gpt-ad-1407836283560-0">
+  <script type="text/javascript">
+    if (window.innerWidth >= 1200) {
+      googletag.cmd.push(function() {
+        googletag.defineSlot('/53015287/mathepower.com_d_970x250_1', [[970, 250], [970, 90], [728, 90]], 'div-gpt-ad-1407836283560-0').addService(googletag.pubads());
+        googletag.display('div-gpt-ad-1407836283560-0');
+      });
+    }
+
+if (window.innerWidth < 1200) {
+      googletag.cmd.push(function() {
+        googletag.defineSlot('/53015287/mathepower.com_m_300x250_5', [300, 250], 'div-gpt-ad-1407836283560-0').addService(googletag.pubads());
+        googletag.display('div-gpt-ad-1407836283560-0');
+      });
+    }
+  </script>
+<div></div></div>
+            </div>
+
+
+
+
+             <div class="row row-offcanvas row-offcanvas-left">
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 sidebar-offcanvas" id="sidebar" role="navigation">
+                    <p class="visible-xs">
+                        <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas"><i class="glyphicon glyphicon-chevron-left"></i></button>
+                    </p>
+                    <!--  Navigation -->
+                    <div class="well sidebar-nav">
+                        <ul class="nav">
+
+<li class="sidebar-brand"><a href="https://www.mathepower.com/index.php">Fach Mathe</a></li><li><hr></li><li class="nav-headline"><b>! NEU: Lineare Algebra !</b></li><li> <a href="https://www.mathepower.com/abstandpunktebene.php">Abstand Punkt und Ebene</a></li><li> <a href="https://www.mathepower.com/betragvektor.php">Betrag eines Vektors</a></li><li> <a href="https://www.mathepower.com/ebenenschneiden.php">Ebenen schneiden</a></li><li> <a href="https://www.mathepower.com/ebenengleichung_aufstellen.php">Ebenengleichungen aufstellen</a></li><li> <a href="https://www.mathepower.com/ebenengleichungen.php">Ebenengleichungen umrechnen</a></li><li> <a href="https://www.mathepower.com/geradedurchpunkte.php">Gerade durch zwei Punkte</a></li><li> <a href="https://www.mathepower.com/schnittgeradeebene.php">Gerade und Ebene schneiden</a></li><li> <a href="https://www.mathepower.com/kreuzprodukt.php">Kreuzprodukt</a></li><li> <a href="https://www.mathepower.com/punktaufebene.php">Punkt auf Ebene</a></li><li> <a href="https://www.mathepower.com/punktaufgerade.php">Punkt auf Gerade</a></li><li> <a href="https://www.mathepower.com/lagebeziehung_geraden.php">Schnitt von Geraden</a></li><li> <a href="https://www.mathepower.com/skalarprodukt.php">Skalarprodukt</a></li><li> <a href="https://www.mathepower.com/normieren.php">Vektor normieren</a></li><li> <a href="https://www.mathepower.com/viereck-vektor.php">Viereck</a></li><li> <a href="https://www.mathepower.com/schnittwinkel_vektoren.php">Winkel zwischen Vektoren</a></li><li><hr></li><li class="nav-headline">Analysis</li><li> <a href="https://www.mathepower.com/ableiten.php">Ableiten</a></li><li> <a href="https://www.mathepower.com/schnittpunkte_koordinatenachsen.php">Achsenschnittpunkte</a></li><li> <a href="https://www.mathepower.com/extrempunkt.php">Extrempunkte</a></li><li> <a href="https://www.mathepower.com/flaechezwischenfunktionen.php">Fläche zwischen Funktionen</a></li><li> <a href="https://www.mathepower.com/funktionen_verschieben.php">Funktionen verschieben</a></li><li> <a href="https://www.mathepower.com/ganzrationale_funktionen.php">Ganzrationale Funktionen</a></li><li> <a href="https://www.mathepower.com/integralrechnung.php">Integralrechnung</a></li><li> <a href="https://www.mathepower.com/kurvendiskussion.php">Kurvendiskussion</a></li><li> <a href="https://www.mathepower.com/monotonie.php">Monotonie</a></li><li> <a href="https://www.mathepower.com/nullstellen.php">Nullstellen</a></li><li> <a href="https://www.mathepower.com/potenzfunktionen.php">Potenzfunktionen</a></li><li> <a href="https://www.mathepower.com/schnittpunkte_funktionen.php">Schnittpunkte von Funktionen</a></li><li> <a href="https://www.mathepower.com/steckbriefaufgaben.php">Steckbriefaufgaben</a></li><li> <a href="https://www.mathepower.com/tangente_funktion.php">Tangente an Funktion</a></li><li> <a href="https://www.mathepower.com/vorzeichenwechselkriterium.php">Vorzeichenwechsel-Kriterium</a></li><li> <a href="https://www.mathepower.com/wendepunkt.php">Wendepunkte</a></li><li><hr></li><li class="nav-headline">Stochastik</li><li> <a href="https://www.mathepower.com/kugelnziehen.php">Kugeln ziehen</a></li><li><hr></li><li class="nav-headline">Klassen 1-4</li><li> <a href="https://www.mathepower.com/schrmal.php">Schriftlich Malnehmen</a></li><li> <a href="https://www.mathepower.com/schradd.php">Schriftlich Plus</a></li><li> <a href="https://www.mathepower.com/schrdiv.php">Schriftlich Teilen</a></li><li> <a href="https://www.mathepower.com/schrsub.php">Schriftlich abziehen</a></li><li><hr></li><li class="nav-headline">Klasse 5</li><li> <a href="https://www.mathepower.com/flaechenberechnung.php">Flächenberechnung</a></li><li> <a href="https://www.mathepower.com/groessen.php">Größen und Einheiten</a></li><li> <a href="https://www.mathepower.com/rational.php">Klammeraufgaben</a></li><li> <a href="https://www.mathepower.com/geometrie.php">Portal Geometrie</a></li><li> <a href="https://www.mathepower.com/quadrat.php">Quadrat</a></li><li> <a href="https://www.mathepower.com/grossr.php">Rechnen mit Größen</a></li><li> <a href="https://www.mathepower.com/rechteck.php">Rechteck</a></li><li> <a href="https://www.mathepower.com/roemisch.php">Römische Zahlen</a></li><li> <a href="https://www.mathepower.com/stellenwertsysteme.php">Zahlensysteme</a></li><li><hr></li><li class="nav-headline">Klasse 6</li><li> <a href="https://www.mathepower.com/bruchdez.php">Bruch und Kommazahl</a></li><li> <a href="https://www.mathepower.com/bruch.php">Brüche</a></li><li> <a href="https://www.mathepower.com/bruchadd.php">Brüche addieren</a></li><li> <a href="https://www.mathepower.com/bruchkur.php">Brüche kürzen</a></li><li> <a href="https://www.mathepower.com/bruchmal.php">Brüche malnehmen</a></li><li> <a href="https://www.mathepower.com/bruchlang.php">Längere Bruchaufgaben</a></li><li> <a href="https://www.mathepower.com/primfaktor.php">Primfaktorzerlegung</a></li><li> <a href="https://www.mathepower.com/quader.php">Quader</a></li><li> <a href="https://www.mathepower.com/teilbarkeit.php">Teilbarkeit</a></li><li> <a href="https://www.mathepower.com/teilermenge.php">Teilermenge</a></li><li> <a href="https://www.mathepower.com/wuerfel.php">Würfel</a></li><li> <a href="https://www.mathepower.com/ggt.php">ggT</a></li><li> <a href="https://www.mathepower.com/kgv.php">kgV</a></li><li><hr></li><li class="nav-headline">Klasse 7</li><li> <a href="https://www.mathepower.com/antidrei.php">Antiproportionaler Dreisatz</a></li><li> <a href="https://www.mathepower.com/antiproportional.php">Antiproportionalitäten</a></li><li> <a href="https://www.mathepower.com/dreieck.php">Dreieck</a></li><li> <a href="https://www.mathepower.com/dreisatz.php">Dreisatz</a></li><li> <a href="https://www.mathepower.com/proportional.php">Proportionalitäten</a></li><li> <a href="https://www.mathepower.com/prozent.php">Prozentrechnung</a></li><li> <a href="https://www.mathepower.com/zinsrechnung.php">Zinsrechnung</a></li><li><hr></li><li class="nav-headline">Klasse 8</li><li> <a href="https://www.mathepower.com/binomisch.php">Binomische Formeln</a></li><li> <a href="https://www.mathepower.com/geraden.php">Geraden</a></li><li> <a href="https://www.mathepower.com/gleichungen.php">Gleichungen lösen</a></li><li> <a href="https://www.mathepower.com/kreis.php">Kreis</a></li><li> <a href="https://www.mathepower.com/lineare_funktionen.php">Lineare Funktionen</a></li><li> <a href="https://www.mathepower.com/parallelogramm.php">Parallelogramm</a></li><li> <a href="https://www.mathepower.com/raute.php">Raute</a></li><li> <a href="https://www.mathepower.com/terme.php">Terme vereinfachen</a></li><li> <a href="https://www.mathepower.com/trapez.php">Trapez</a></li><li> <a href="https://www.mathepower.com/viereck.php">Viereck</a></li><li><hr></li><li class="nav-headline">Klasse 9</li><li> <a href="https://www.mathepower.com/additionsverfahren.php">Additionsverfahren</a></li><li> <a href="https://www.mathepower.com/bruchgleich.php">Bruchgleichungen</a></li><li> <a href="https://www.mathepower.com/bruchterme.php">Bruchterme</a></li><li> <a href="https://www.mathepower.com/funktionen.php">Funktionen</a></li><li> <a href="https://www.mathepower.com/gleichsetzungsverfahren.php">Gleichsetzungsverfahren</a></li><li> <a href="https://www.mathepower.com/freistell.php">Gleichung auflösen</a></li><li> <a href="https://www.mathepower.com/glsyst.php">Gleichungssysteme</a></li><li> <a href="https://www.mathepower.com/volumen.php">Portal Volumenberechnung</a></li><li> <a href="https://www.mathepower.com/rechtw.php">Pythagoras-Rechner</a></li><li> <a href="https://www.mathepower.com/quadratische_funktionen.php">Quadratische Funktionen</a></li><li> <a href="https://www.mathepower.com/qgleich.php">Quadratische Gleichungen</a></li><li> <a href="https://www.mathepower.com/scheitelpunktform.php">Scheitelpunktform</a></li><li> <a href="https://www.mathepower.com/strahlensatz.php">Strahlensatz</a></li><li> <a href="https://www.mathepower.com/wurzelgleichungen.php">Wurzelgleichungen</a></li><li> <a href="https://www.mathepower.com/wurzelterme.php">Wurzelterme</a></li><li><hr></li><li class="nav-headline">Klasse 10</li><li> <a href="https://www.mathepower.com/kosinussatz.php">Cosinussatz</a></li><li> <a href="https://www.mathepower.com/kegel.php">Kegel</a></li><li> <a href="https://www.mathepower.com/kreisbogen.php">Kreisbogen</a></li><li> <a href="https://www.mathepower.com/kugel.php">Kugel</a></li><li> <a href="https://www.mathepower.com/potenzrechnung.php">Potenzrechnung</a></li><li> <a href="https://www.mathepower.com/prisma.php">Prisma</a></li><li> <a href="https://www.mathepower.com/pyramide.php">Pyramide</a></li><li> <a href="https://www.mathepower.com/sinussatz.php">Sinussatz</a></li><li> <a href="https://www.mathepower.com/zylinder.php">Zylinder</a><br><a href="https://www.mathepower.com/physik.php">Fach Physik</a></li></ul>
+                    </div>
+                </div>
+                <!-- Page Content -->
+                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9" id="content">
+                    <div class="row visible-xs">
+                        <div class="col-lg-12">
+                            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Menü <span class="glyphicon glyphicon-menu-hamburger"></span></button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                         <div class="col-lg-12">
+
+
+              
+<b>Deine Aufgabe:</b><br>a: 5 &nbsp;&nbsp;&nbsp;&nbsp;b: 3 &nbsp;&nbsp;&nbsp;&nbsp;&#945;: 90 &nbsp;&nbsp;&nbsp;&nbsp;<br><b>Mehrere mögliche Lösungen, da verschiedene Werte für <img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_014.png" alt="a_b" style="vertical-align:middle"> möglich!</b><br><b>Dein Dreieck.</b> (1 Kästchen entspricht 0.5 Einheiten, also wohl einem Kästchen im Heft.)<br>
+   <table><tbody><tr><td>
+   <canvas id="_geocanv1" width="242" height="242" style="border:1px solid #d3d3d3; position:static ">
+Dein Browser unterstützt den HTML-Canvas-Tag nicht. Hol dir einen neuen. :P </canvas>
+</td></tr></tbody></table>
+
+<script>
+// hier die Funktionen definieren
+function fkmpdc1(name) {
+  var cmpdc = document.getElementById('_geocanv1');
+  var ctxmpdc = cmpdc.getContext('2d');
+
+  ctxmpdc.fillStyle='#FFFFFF';
+  ctxmpdc.fillRect(0,0,240,240);
+  ctxmpdc.lineWidth=3;
+  // hiervor nix schreiben, sonst nicht gelöscht.
+  // Raster
+  ctxmpdc.lineWidth='1';
+  ctxmpdc.strokeStyle='#CCCCCC';
+  for(schritt=20%20;schritt<240;schritt+=20) {
+    ctxmpdc.beginPath();
+    ctxmpdc.moveTo(schritt,0);
+    ctxmpdc.lineTo(schritt,240);
+    ctxmpdc.stroke();
+  }
+  for(schritt=168%20;schritt<240;schritt+=20) {
+    ctxmpdc.moveTo(0,schritt);
+    ctxmpdc.lineTo(240,schritt);
+    ctxmpdc.stroke();
+  }
+  ctxmpdc.lineWidth='3';
+  
+
+  // erst mal ausmalen, wenn man soll
+  if(name=='fi') {
+    ctxmpdc.fillStyle='#FFFF00';
+    ctxmpdc.beginPath();
+    ctxmpdc.moveTo(148,72);
+    ctxmpdc.lineTo(20,168);
+    ctxmpdc.lineTo(220,168);
+    ctxmpdc.lineTo(148,72);
+    ctxmpdc.fill();
+  }
+  ctxmpdc.strokeStyle='#000000';
+  ctxmpdc.beginPath();
+  ctxmpdc.moveTo(148,72);
+  ctxmpdc.lineTo(20,168);
+  ctxmpdc.lineTo(220,168);
+  ctxmpdc.lineTo(148,72);
+  ctxmpdc.stroke();
+  
+  ctxmpdc.fillStyle='#000000';
+  ctxmpdc.font='20px Arial';ctxmpdc.fillText('a',115,188);ctxmpdc.fillText('b',191,119);ctxmpdc.fillText('c',70,116);
+  ctxmpdc.stroke();
+  ctxmpdc.strokeStyle='#00FF00';
+  if(name=='a') {
+    ctxmpdc.beginPath();
+    ctxmpdc.moveTo(20,168);
+    ctxmpdc.lineTo(220,168);
+    ctxmpdc.stroke();
+  }
+  if(name=='b') {
+    ctxmpdc.beginPath();
+    ctxmpdc.moveTo(220,168);
+    ctxmpdc.lineTo(148,72);
+    ctxmpdc.stroke();
+  }
+  if(name=='c') {
+    ctxmpdc.beginPath();
+    ctxmpdc.moveTo(148,72);
+    ctxmpdc.lineTo(20,168);
+    ctxmpdc.stroke();
+  }
+  if(name=='d') {
+    ctxmpdc.beginPath();
+    ctxmpdc.moveTo(0,0);
+    ctxmpdc.lineTo(0,0);
+    ctxmpdc.stroke();
+  }
+  if(name=='e') {
+    ctxmpdc.beginPath();
+    ctxmpdc.moveTo(0,0);
+    ctxmpdc.lineTo(0,0);
+    ctxmpdc.stroke();
+  }
+  if(name=='f') {
+    ctxmpdc.beginPath();
+    ctxmpdc.moveTo(0,0);
+    ctxmpdc.lineTo(0,0);
+    ctxmpdc.stroke();
+  }
+  if(name=='p') {
+    ctxmpdc.beginPath();
+    ctxmpdc.moveTo(0,0);
+    ctxmpdc.lineTo(0,0);
+    ctxmpdc.stroke();
+  }
+  if(name=='q') {
+    ctxmpdc.beginPath();
+    ctxmpdc.moveTo(0,0);
+    ctxmpdc.lineTo(0,0);
+    ctxmpdc.stroke();
+  }
+  if(name=='u') {
+    ctxmpdc.beginPath();
+    ctxmpdc.moveTo(148,72);
+    ctxmpdc.lineTo(20,168);
+    ctxmpdc.lineTo(220,168);
+    ctxmpdc.lineTo(0,0);
+    ctxmpdc.lineTo(148,72);
+    ctxmpdc.stroke();
+  }
+  if(name=='alpha') {
+    ctxmpdc.beginPath();
+    ctxmpdc.arc(148,72,40,0.92729521800161,2.4980915447965);
+    ctxmpdc.stroke();
+  }
+  if(name=='beta') {
+    ctxmpdc.beginPath();
+    ctxmpdc.arc(20,168,40,5.6396841983863,0);
+    ctxmpdc.stroke();
+  }
+  if(name=='gamma') {
+    ctxmpdc.beginPath();
+    ctxmpdc.arc(220,168,40,3.1415926535898,4.0688878715914);
+    ctxmpdc.stroke();
+  }
+  if(name=='delta') {
+    ctxmpdc.beginPath();
+    ctxmpdc.arc(0,0,0);
+    ctxmpdc.stroke();
+  }
+  if(name=='ha'||name=='h') {
+    ctxmpdc.beginPath();
+    ctxmpdc.moveTo(148,168);
+    ctxmpdc.lineTo(148,72);
+    ctxmpdc.stroke();
+  }
+  if(name=='hb') {
+    ctxmpdc.beginPath();
+    ctxmpdc.moveTo(0,0);
+    ctxmpdc.lineTo(0,0);
+    ctxmpdc.stroke();
+  }
+
+  if(name=='def') {
+
+  }
+  /*else {
+    ctx.strokeStyle='#00FF00';
+    ctx.beginPath();
+    ctx.moveTo(148,72);
+    ctx.lineTo(20,168);
+    ctx.stroke();
+    ctx.strokeStyle='#000000';
+    ctx.beginPath();
+    ctx.moveTo(20,168);
+    ctx.lineTo(220,168);
+    ctx.lineTo(148,72);
+    ctx.stroke();
+  }*/
+}
+
+// und das Standardlayout
+var cmpdc = document.getElementById('_geocanv1');
+fkmpdc1('def');
+</script>
+
+Bewege die Maus über die Ergebnisse :)
+   <br><br><font size="+1"><b> Ergebnis: </b><br><br>Seitenlängen: <a onmouseover='fkmpdc1("a");' onmouseout='fkmpdc1("def");' style="text-decoration: none; ">a: 5&nbsp;&nbsp;&nbsp;</a><a onmouseover='fkmpdc1("b");' onmouseout='fkmpdc1("def");' style="text-decoration: none; ">b: 3&nbsp;&nbsp;&nbsp;</a><a onmouseover='fkmpdc1("c");' onmouseout='fkmpdc1("def");' style="text-decoration: none; ">c: 4&nbsp;&nbsp;&nbsp;</a><br>Höhe auf a:<a onmouseover='fkmpdc1("ha");' onmouseout='fkmpdc1("def");' style="text-decoration: none; ">h<sub>a</sub>: 2.4&nbsp;&nbsp;&nbsp;</a><br>Winkel: <a onmouseover='fkmpdc1("alpha");' onmouseout='fkmpdc1("def");' style="text-decoration: none; ">&#945;: 90&nbsp;&nbsp;&nbsp;</a><a onmouseover='fkmpdc1("beta");' onmouseout='fkmpdc1("def");' style="text-decoration: none; ">&#946;: 36.87&nbsp;&nbsp;&nbsp;</a><a onmouseover='fkmpdc1("gamma");' onmouseout='fkmpdc1("def");' style="text-decoration: none; ">&#947;: 53.13&nbsp;&nbsp;&nbsp;</a><br> <a onmouseover='fkmpdc1("fi");' onmouseout='fkmpdc1("def");' style="text-decoration: none; ">Flächeninhalt: 6&nbsp;&nbsp;&nbsp;</a></font><br><br><br><b>Mathepower hat wie folgt gerechnet:</b><br><br><b> Winkel <img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_014.png" alt="a_b" style="vertical-align:middle"> berechnen:</b> Verwende die Formel <img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_038.png" alt="dsin(a_a)/a=dsin(a_b)/b" style="vertical-align:middle"> (Sinussatz)<br><table><tbody><tr height="25"><td><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_038.png" alt="dsin(a_a)/a=dsin(a_b)/b" style="vertical-align:middle"></td><td <="" td="" width="30"></td><td>| Vertausche beide Seiten der Gleichung.</td></tr>
+<tr height="25"><td nowrap="nowrap"><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_008.png" alt="1*dsin(a_b)/b=1*dsin(a_a)/a" style="vertical-align:middle"></td><td></td><td>| auf beiden Seiten mit <img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_019.png" alt="b" style="vertical-align:middle"> malnehmen. </td></tr>
+<tr height="25"><td nowrap="nowrap"><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_020.png" alt="1*dsin(a_b)=dsin(a_a)/a*b" style="vertical-align:middle"></td><td></td><td>|  Nimm <img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_021.png" alt="dsin(a_a)/a" style="vertical-align:middle"> und <img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_019.png" alt="b" style="vertical-align:middle"> mal. Man nimmt mit einem Bruch mal, indem man in den Zähler hineinmalnimmt.</td></tr>
+<tr height="25"><td nowrap="nowrap"><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_031.png" alt="1*dsin(a_b)=1*(b*dsin(a_a))/a" style="vertical-align:middle"></td><td></td><td>| Wende auf beiden Seiten <img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_011.png" alt="das(x)" style="vertical-align:middle">an.</td></tr>
+<tr height="25"><td nowrap="nowrap"><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_037.png" alt="1*a_b=1*das((b*dsin(a_a))/a)" style="vertical-align:middle"></td><td></td><td>| Beachte: <img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_014.png" alt="a_b" style="vertical-align:middle"> könnte auch <img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_018.png" alt="180+-1*das((b*dsin(a_a))/a)" style="vertical-align:middle">sein.</td></tr>
+<tr height="25"><td nowrap="nowrap"><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_034.png" alt="1*a_b=-1*das((b*dsin(a_a))/a)+180" style="vertical-align:middle"></td><td></td><td></td></tr></tbody></table>
+Werte in <img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_037.png" alt="a_b=1*das((b*dsin(a_a))/a)" style="vertical-align:middle"> einsetzen ergibt:<br><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_025.png" alt="a_b=1*das((3*dsin(90))/5)" style="vertical-align:middle"><br><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_023.png" alt="a_b=36.87" style="vertical-align:middle"><br>Werte in <img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_034.png" alt="a_b=-1*das((b*dsin(a_a))/a)+180" style="vertical-align:middle"> einsetzen ergibt:<br><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_006.png" alt="a_b=-1*das((3*dsin(90))/5)+180" style="vertical-align:middle"><br><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_033.png" alt="a_b=143.13" style="vertical-align:middle"><br><b>mehrere mögliche Lösungen, da verschiedene Werte für <img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_014.png" alt="a_b" style="vertical-align:middle"> möglich!</b><br><br><table border="1"><tbody><tr><td><table><tbody><tr><td>&nbsp;&nbsp;</td><td><br>Lösung mit <img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_014.png" alt="a_b" style="vertical-align:middle">=36.869897645844<br><br><b> Winkel <img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_029.png" alt="a_c" style="vertical-align:middle"> berechnen:</b> Verwende die Formel <img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_002.png" alt="a_a+a_b+a_c=180" style="vertical-align:middle"> (Winkelsumme im Dreieck)<br><table><tbody><tr height="25"><td><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_002.png" alt="a_a+a_b+a_c=180" style="vertical-align:middle"></td><td <="" td="" width="30"></td><td>| <img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_010.png" alt="-1*a_a" style="vertical-align:middle"></td></tr>
+<tr height="25"><td nowrap="nowrap"><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_035.png" alt="1*a_b+1*a_c=-1*a_a+180" style="vertical-align:middle"></td><td></td><td>| <img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_028.png" alt="-1*a_b" style="vertical-align:middle"></td></tr>
+<tr height="25"><td nowrap="nowrap"><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_003.png" alt="1*a_c=-1*a_b+-1*a_a+180" style="vertical-align:middle"></td><td></td><td></td></tr></tbody></table>
+Werte in <img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_003.png" alt="a_c=-1*a_b+-1*a_a+180" style="vertical-align:middle"> einsetzen ergibt:<br><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_012.png" alt="a_c=-1*36.87+-1*90+180" style="vertical-align:middle"><br><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_004.png" alt="a_c=53.13" style="vertical-align:middle"><br><br><b> Seite <img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_026.png" alt="c" style="vertical-align:middle"> berechnen:</b> Verwende die Formel <img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_030.png" alt="c^2=a^2+b^2+-2*a*b*dcos(a_c)" style="vertical-align:middle"> (<a href="https://de.wikipedia.org/wiki/Kosinussatz" target="_blank">Kosinussatz</a>)<br><table><tbody><tr height="25"><td><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_030.png" alt="c^2=a^2+b^2+-2*a*b*dcos(a_c)" style="vertical-align:middle"></td><td <="" td="" width="30"></td><td>| Auf beiden Seiten Wurzel ziehen</td></tr>
+<tr height="25"><td nowrap="nowrap"><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_022.png" alt="1*c=1*1*a^2+-2*a*b*dcos(a_c)+1*b^2^0.5" style="vertical-align:middle"></td><td></td><td></td></tr></tbody></table>
+Werte in <img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_022.png" alt="c=1*1*a^2+-2*a*b*dcos(a_c)+1*b^2^0.5" style="vertical-align:middle"> einsetzen ergibt:<br><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_024.png" alt="c=1*1*5^2+-2*5*3*dcos(53.13)+1*3^2^0.5" style="vertical-align:middle"><br><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_009.png" alt="c=4" style="vertical-align:middle"><br><br><b> Höhe <img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_005.png" alt="h_a" style="vertical-align:middle"> berechnen:</b> Verwende die Formel <img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_027.png" alt="h_a=b*dsin(a_c)" style="vertical-align:middle"><br><table><tbody><tr height="25"><td><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_027.png" alt="h_a=b*dsin(a_c)" style="vertical-align:middle"></td><td <="" td="" width="30"></td><td></td></tr></tbody></table>
+Werte in <img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_027.png" alt="h_a=1*b*dsin(a_c)" style="vertical-align:middle"> einsetzen ergibt:<br><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_036.png" alt="h_a=1*3*dsin(53.13)" style="vertical-align:middle"><br><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben.png" alt="h_a=2.4" style="vertical-align:middle"><br><br><b> Flächeninhalt <img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_016.png" alt="a_f" style="vertical-align:middle"> berechnen:</b> Verwende die Formel <img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_007.png" alt="a_f=(a*h_a)/2" style="vertical-align:middle"> (Flächeninhaltsformel Dreieck)<br><table><tbody><tr height="25"><td><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_007.png" alt="a_f=(a*h_a)/2" style="vertical-align:middle"></td><td <="" td="" width="30"></td><td></td></tr></tbody></table>
+Werte in <img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_007.png" alt="a_f=1*(a*h_a)/2" style="vertical-align:middle"> einsetzen ergibt:<br><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_013.png" alt="a_f=1*(5*2.4)/2" style="vertical-align:middle"><br><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_032.png" alt="a_f=6" style="vertical-align:middle"><br><br></td><td>&nbsp;&nbsp;</td></tr></tbody></table></td></tr></tbody></table><table border="1"><tbody><tr><td><table><tbody><tr><td>&nbsp;&nbsp;</td><td><br>Lösung mit <img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_014.png" alt="a_b" style="vertical-align:middle">=143.13010235416<br><br><b>Mathepower denkt, dass deine Eingaben eine unmögliche Figur beschreiben.</b><br>Begründung: siehe Rechnung unten.<br><br><b> Winkel <img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_029.png" alt="a_c" style="vertical-align:middle"> berechnen:</b> Verwende die Formel <img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_002.png" alt="a_a+a_b+a_c=180" style="vertical-align:middle"> (Winkelsumme im Dreieck)<br><table><tbody><tr height="25"><td><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_002.png" alt="a_a+a_b+a_c=180" style="vertical-align:middle"></td><td <="" td="" width="30"></td><td>| <img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_010.png" alt="-1*a_a" style="vertical-align:middle"></td></tr>
+<tr height="25"><td nowrap="nowrap"><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_035.png" alt="1*a_b+1*a_c=-1*a_a+180" style="vertical-align:middle"></td><td></td><td>| <img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_028.png" alt="-1*a_b" style="vertical-align:middle"></td></tr>
+<tr height="25"><td nowrap="nowrap"><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_003.png" alt="1*a_c=-1*a_b+-1*a_a+180" style="vertical-align:middle"></td><td></td><td></td></tr></tbody></table>
+Werte in <img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_003.png" alt="a_c=-1*a_b+-1*a_a+180" style="vertical-align:middle"> einsetzen ergibt:<br><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_015.png" alt="a_c=-1*143.13+-1*90+180" style="vertical-align:middle"><br><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/glbaumschreiben_017.png" alt="a_c=-53.13" style="vertical-align:middle"><br>Länge / Winkel &lt;= 0 nicht möglich.<br><br></td><td>&nbsp;&nbsp;</td></tr></tbody></table></td></tr></tbody></table><br><br>
+                         </div>
+                    </div>
+                    <div class="row">
+                         <div class="col-lg-6">
+                            <!-- Yieldlove AdTag - mathepower.com - responsive -->
+<div id="div-gpt-ad-1407836226619-0">
+  <script type="text/javascript">
+    if (window.innerWidth >= 768) {
+      googletag.cmd.push(function() {
+        googletag.defineSlot('/53015287/mathepower.com_d_300x250_2', [300, 250], 'div-gpt-ad-1407836226619-0').addService(googletag.pubads());
+        googletag.display('div-gpt-ad-1407836226619-0');
+      });
+    }
+
+if (window.innerWidth < 768) {
+      googletag.cmd.push(function() {
+        googletag.defineSlot('/53015287/mathepower.com_m_300x250_2', [300, 250], 'div-gpt-ad-1407836226619-0').addService(googletag.pubads());
+        googletag.display('div-gpt-ad-1407836226619-0');
+      });
+    }
+  </script>
+<div></div></div>
+
+
+
+
+
+                         </div>
+
+
+<div class="col-lg-6"><a href="https://www.mathepower.com/dreieck.php"><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/de.png" width="40" vspace="5" hspace="5" height="20"></a>
+ <a href="https://www.mathepower.com/en/triangle.php"><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/en.png" alt="Triangle calculator" width="40" vspace="5" hspace="5" height="20"></a>
+ <a href="https://www.mathepower.com/it/triangolo.php"><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/it.png" alt="Il triangolo" width="40" vspace="5" hspace="5" height="20"></a>
+ <a href="https://www.mathepower.com/fr/triangle.php"><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/fr.png" alt="Le triangle " width="40" vspace="5" hspace="5" height="20"></a>
+ <a href="https://www.mathepower.com/ar/triangle.php"><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/ar.png" alt="Ø­Ø§Ø³Ø¨Ø© Ø§Ù„Ù…Ø«Ù„Ø«" width="40" vspace="5" hspace="5" height="20"></a>
+ <a href="https://www.mathepower.com/hi/triangle.php"><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/hi.png" alt="à¤¤à¥à¤°à¤¿à¤­à¥à¤œ à¤•à¥ˆà¤²à¤•à¥à¤²à¥‡à¤Ÿà¤°" width="40" vspace="5" hspace="5" height="20"></a>
+ <a href="https://www.mathepower.com/cn/san1jiao3xing2.php"><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/cn.png" alt="ä¸‰è§’å½¢" width="40" vspace="5" hspace="5" height="20"></a>
+ <a href="https://www.mathepower.com/nl/driehoek.php"><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/nl.png" alt="Driehoek rekenmachine" width="40" vspace="5" hspace="5" height="20"></a>
+ <a href="https://www.mathepower.com/es/triangulo.php"><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/es.png" alt="Calculadora de triÃ¡ngulos" width="40" vspace="5" hspace="5" height="20"></a>
+ <a href="https://www.mathepower.com/pt/triangulo.php"><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/pt.png" alt="Calculador de triângulo " width="40" vspace="5" hspace="5" height="20"></a>
+<form action="dreieck.php" method="POST" id="mpform">
+ <colspan>
+ </colspan><table class="tafel" cellspacing="0" cellpadding="0" border="0">
+ <colgroup><col width="400">
+ </colgroup>
+<tbody><tr height="325">
+ <td>
+Dieser Rechner berechnet aus drei beliebigen Angaben eines Dreieckes alle weiteren.
+<br><img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/dr.gif" name="obenpic" alt="Ein Dreieck." width="100" height="100" align="top"><br>  <br><b>Drei</b> Felder sind auszufüllen. Rest wird berechnet.<br><br>
+
+
+ a:<input type="text" name="a" size="3" onfocus="f('a')" onblur="f('def')" autocomplete="off">
+     b:<input type="text" name="b" size="3" onfocus="f('b')" onblur="f('def')" autocomplete="off">
+     c:<input type="text" name="c" size="3" onfocus="f('c')" onblur="f('def')" autocomplete="off">
+     <br>
+     alpha:<input type="text" name="alpha" size="3" onfocus="f('alpha')" onblur="f('def')" autocomplete="off">
+     beta:<input type="text" name="beta" size="3" onfocus="f('beta')" onblur="f('def')" autocomplete="off">
+     gamma:<input type="text" name="gamma" size="3" onfocus="f('gamma')" onblur="f('def')" autocomplete="off">
+          <br>
+     Höhe h<sub>a</sub>:<input type="text" name="ha" size="3" onfocus="f('ha')" onblur="f('def')" autocomplete="off">
+     Höhe h<sub>b</sub>:<input type="text" name="hb" size="3" onfocus="f('hb')" onblur="f('def')" autocomplete="off">
+     Höhe h<sub>c</sub>:<input type="text" name="hc" size="3" onfocus="f('hc')" onblur="f('def')" autocomplete="off">
+     <br>
+     Flächeninhalt:<input type="text" name="flinh" size="3" onfocus="f('fi')" onblur="f('def')" autocomplete="off">
+     </td></tr>
+     <tr>
+ <td align="center">
+ <input type="submit" name="submit" value="berechnen">
+ <input type="reset" name="clear" value="löschen">
+
+   <br> <br>
+ </td>
+</tr>
+     <tr><td>
+     <b>Seltener gegeben (lass sie leer, wenn du sie nicht brauchst):</b> <br>
+     Schwerelinie:<br>
+     s a:<input type="text" name="sa" size="3" onfocus="f('sa')" onblur="f('def')" autocomplete="off">
+     s b:<input type="text" name="sb" size="3" onfocus="f('sb')" onblur="f('def')" autocomplete="off">
+     s c:<input type="text" name="sc" size="3" onfocus="f('sc')" onblur="f('def')" autocomplete="off">
+     <br>
+     Winkelhalbierende: <br>
+     w a:<input type="text" name="wa" size="3" onfocus="f('wa')" onblur="f('def')" autocomplete="off">
+     w b:<input type="text" name="wb" size="3" onfocus="f('wb')" onblur="f('def')" autocomplete="off">
+     w c:<input type="text" name="wc" size="3" onfocus="f('wc')" onblur="f('def')" autocomplete="off">
+
+
+
+
+
+ </td>
+</tr>
+<tr height="70">
+ <td align="center">
+ <input type="submit" name="submit" value="berechnen">
+ <input type="reset" name="clear" value="löschen">
+
+ 
+ </td>
+</tr>
+</tbody></table>
+</form></div>
+</div>
+
+
+                         <div class="col-lg-12">
+                         <!-- hier stand das Video -->
+
+</div>
+<img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/dr.gif" name="mainpic2" alt="Ein Dreieck." width="100" height="100" align="right">Für Dreiecke gilt:<br>
+ <a href="https://www.mathepower.com/sinussatz.php">Sinussatz</a> :<br>
+ a / b = sin alpha / sin beta<br>
+ <a href="https://www.mathepower.com/kosinussatz.php">Kosinussatz</a> :<br>
+ a² = b² + c² - 2bc cos alpha<br>
+
+
+
+
+
+
+
+
+
+<h2 align="center">Dreiecke</h2><br>
+<h2>Was ist ein Dreieck?</h2>
+<img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/dr.gif" alt="Ein Dreieck." width="100" height="100" border="0" align="left">Hier sehen wir ein Dreieck.<br>
+Ein Dreieck hat drei Seiten und drei Ecken.<br>
+An jeder der Ecken befindet sich ein Innenwinkel, also der Winkel, der 
+von den zwei an der Ecke endenden Seiten eingeschlossen wird.<br>
+Die Summe aller Innenwinkel in einem Dreieck ist stets gleich 180 Grad.<br>
+<br>
+<h2>Durch welche Angaben ist ein Dreieck eindeutig bestimmt?</h2>
+Ein Dreieck ist stets durch Angabe von drei Seiten eindeutig bestimmt, 
+außerdem durch Angabe zweier Winkel und einer Seite, oder durch zwei 
+Seiten und den Winkel zwischen diesen Seiten.<br>
+Es gibt auch andere Fälle, in denen ein Dreieck durch drei Angaben 
+eindeutig bestimmt ist, jedoch nicht immer; z.B. gibt es zu zwei 
+gegebenen Seiten und einer gegebenen Höhe auf einer Seite stets zwei 
+Möglichkeiten, wie man das Dreieck konstruieren kann. Jedoch gibt es zu 
+drei gegebenen Angaben bei einem Dreieck nie mehr als zwei 
+Möglichkeiten, wie man aus ihnen ein Dreieck konstruieren kann.<br>
+<br>
+<h2>Was ist die Höhe eines Dreieckes?</h2>
+<img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/dr_hb.gif" alt="" width="100" height="100" border="0" align="left">
+Die Höhe ist die Länge der Strecke, die auf einer Seite senkrecht steht und zur gegenüberliegenden Ecke verläuft.
+
+<h2>Welche Berechnungen kann man an einem Dreieck durchführen?</h2>
+Den Flächeninhalt eines Dreieckes berechnet man, indem man eine 
+beliebige Seite und die Höhe auf dieser Seite betrachtet. Der 
+Flächeninhalt ist dann gleich (Seite*Höhe)/2.<br>
+Die Seiten und Winkel kann man mit Hilfe von Sinus und Kosinus (Thema 
+Klasse 10) berechnen: Es gilt nämlich für zwei Seiten a und b und die 
+gegenüberliegenden Winkel Alpha und Beta:<br>
+a/sin Alpha = b/sin Beta (<a name="sinussatz">Sinussatz</a>).<br>
+Weiter gilt für drei Seiten a,b,c und den Winkel Gamma gegenüber von Seite c:<br>
+a²=b²+c²-2*b*c*cos Gamma (<a name="kosinussatz">Kosinussatz</a>).<br><br>
+<h2>Welche interessanten Linien gibt es bei Dreiecken?</h2>
+Interessante Linien am Dreieck sind die Mittelsenkrechten, die Winkelhalbierenden,
+die Schwerelinien und die Höhen.<br><br>
+<h2>Welche Spezialfälle von Dreiecken sind interessant?</h2>
+Interessante Spezialfälle sind das <a name="gleichseitiges_dreieck">gleichseitige Dreieck</a>, das
+<a name="gleichschenkliges_dreieck">gleichschenklige Dreieck</a> und das <a href="https://www.mathepower.com/rechtw.php">rechtwinklige Dreieck</a>.<br><br>
+
+<h2>Wie konstruiert man den Umkreis von einem Dreieck?</h2>
+Um den <a name="umkreis">Umkreis</a> von einem Dreieck zu konstruieren, konstruiert man auf jeder Seite die <a name="mittelsenkrechte">Mittelsenkrechte</a>,
+oder nur zwei dieser Mittelsenkrechten, da sie sich ja schließlich alle 
+drei in einem Punkt schneiden. Dann zeichnet man um diesen
+Punkt einen <a href="https://www.mathepower.com/kreis.php">Kreis</a>, der bei einem der Eckpunkte beginnt. Dieser Kreis ist dann der Umkreis von dem Dreieck.<br><br>
+Dafür haben wir auch eine Flash-Animation:<br>
+<embed src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/umkreis.swf" alt="Umkreis von einem Dreieck konstruieren." width="550" height="400" align="middle">
+
+<h2>Wie konstruiert man den Inkreis von einem Dreieck?</h2>
+Um den <a name="inkreis">Inkreis</a> von einem Dreieck zu konstruieren, konstruiert man die drei <a name="winkelhalbierende">Winkelhalbierenden</a>.
+Zieht man um den <a name="winkelhalbierendenschnittpunkt">Winkelhalbierendenschnittpunkt</a> nun einen Kreis, der eine der Seiten von dem Dreieck
+als <a name="tangente">Tangente</a> hat, so ist das genau der Inkreis.<br><br>
+Auch dafür haben wir eine Flash-Animation:<br>
+<embed src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/inkreis.swf" alt="Inkreis von einem Dreieck konstruieren." width="550" height="400" align="middle">
+
+<h2>Wie konstruiert man den Schwerpunkt von einem Dreieck?</h2>
+Um den <a name="schwerpunkt">Schwerpunkt</a> von einem Dreieck zu konstruieren, konstruiert man die drei Schwerelinien.
+Dies sind die Strecken von einem Seitenmittelpunkt zur gegenüberliegenden Ecke. Sie schneiden sich in einem Punkt; dies ist
+der Schwerpunkt.<br><br>
+Die folgende Flash-Animation zeigt das Verfahren:<br>
+<embed src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/tangenteankreis.swf" alt="Tangente an Kreis konstruieren." width="550" height="400" align="middle"><br><br><br>
+
+Für weitere Infos bewege die Maus über eines der unten stehenden Wörter,
+ und das entsprechende Stück wird auf dem Dreieck unten farbig markiert.<br>
+<br><br>
+<img src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/dr.gif" name="mainpic" alt="" border="0" align="left">
+<a onmouseover='bu("a");' onmouseout='bu("def");'>Seite a,</a>
+<a onmouseover='bu("b");' onmouseout='bu("def");'>Seite b,</a>
+<a onmouseover='bu("c");' onmouseout='bu("def");'>Seite c</a><br>
+<a onmouseover='bu("alpha");' onmouseout='bu("def");'>Winkel Alpha,</a>
+<a onmouseover='bu("beta");' onmouseout='bu("def");'>Winkel Beta,</a>
+<a onmouseover='bu("gamma");' onmouseout='bu("def");'>Winkel Gamma</a><br>
+<a onmouseover='bu("ha");' onmouseout='bu("def");'>Höhe auf a,</a>
+<a onmouseover='bu("hb");' onmouseout='bu("def");'>Höhe auf b,</a>
+<a onmouseover='bu("hc");' onmouseout='bu("def");'>Höhe auf c</a><br>
+<a onmouseover='bu("sa");' onmouseout='bu("def");'>Schwerelinie auf a,</a>
+<a onmouseover='bu("sb");' onmouseout='bu("def");'>Schwerelinie auf b,</a>
+<a onmouseover='bu("sc");' onmouseout='bu("def");'>Schwerelinie auf c</a><br>
+<a onmouseover='bu("wa");' onmouseout='bu("def");'>Winkelhalbierende zu Alpha,</a>
+<a onmouseover='bu("wb");' onmouseout='bu("def");'>Winkelhalbierende zu Beta,</a>
+<a onmouseover='bu("wc");' onmouseout='bu("def");'>Winkelhalbierende zu Gamma</a><br>
+<a onmouseover='bu("fi");' onmouseout='bu("def");'>Flächeninhalt</a>
+<br>
+        
+<!-- Yieldlove AdTag - mathepower.com - responsive -->
+<div id="div-gpt-ad-1407836040389-0">
+  <script type="text/javascript">
+    if (window.innerWidth >= 768) {
+      googletag.cmd.push(function() {
+        googletag.defineSlot('/53015287/mathepower.com_d_640x480_1', [640, 480], 'div-gpt-ad-1407836040389-0').addService(googletag.pubads());
+        googletag.display('div-gpt-ad-1407836040389-0');
+      });
+    }
+
+if (window.innerWidth < 768 && window.innerWidth >= 370) {
+      googletag.cmd.push(function() {
+        googletag.defineSlot('/53015287/mathepower.com_d_300x250_1', [300, 250], 'div-gpt-ad-1407836040389-0').addService(googletag.pubads());
+        googletag.display('div-gpt-ad-1407836040389-0');
+      });
+    }
+
+if (window.innerWidth < 370) {
+      googletag.cmd.push(function() {
+        googletag.defineSlot('/53015287/mathepower.com_m_300x250_3', [300, 250], 'div-gpt-ad-1407836040389-0').addService(googletag.pubads());
+        googletag.display('div-gpt-ad-1407836040389-0');
+      });
+    }
+  </script>
+<div></div></div>
+                          <div class="row justify-content-between">
+                                <div class="col-lg-7 col-sm-11 hidden-xs">
+                                    <br>
+                                    </div>
+                                <div class="col-xxs-12 visible-xs">   </div>
+                                <div class="col-lg-4 visible-lg"></div>
+                                <div class="col-sm-1">
+                                   <br>
+                                   <div style="position: absolute; width: 450px; left: -10000px;" id="___plusone_0"><iframe ng-non-bindable="" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position:absolute;top:-10000px;width:450px;margin:0px;border-style:none" tabindex="0" vspace="0" id="I0_1619716296386" name="I0_1619716296386" src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/fastbutton.html" data-gapiattached="true" width="100%" frameborder="0"></iframe></div><div class="g-plusone" data-gapiscan="true" data-onload="true" data-gapistub="true"></div>
+                                </div>
+                            </div>
+
+                            </div>
+                         </div>
+                        <!-- END Content -->
+                        
+
+                </div> <!-- content col-->
+            </div><!-- offcanvas left-->
+            <footer class="footer">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <p class="text-muted padding-top">© 2015 mathepower.com </p>
+
+                    </div>
+                     <div class="col-xs-4 pull-right text-right " style="padding-top: 10px;">
+                        <p><b><a href="https://www.mathepower.com/impressum.php">Impressum / Datenschutz</a></b></p>
+
+                    </div>
+
+                </div>
+            </footer>
+        <!-- container-fluid -->
+
+     <!-- site -->
+
+    <!-- script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script -->
+    <script src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/jquery-1.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.3.min.js"><\/script>')</script>
+    <script src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/bootstrap.js"></script>
+    <!-- script src="./js/bootstrap.min.js"></script -->
+    <script><!-- Menu Toggle Script -->
+
+$(document).ready(function() {
+    $('[data-toggle=offcanvas]').click(function() {
+        $('.row-offcanvas').toggleClass('active');
+    });
+});</script>
+    <!-- hier weitere JS Dateien einbauen -->
+    <!-- Google Analytics Code //-->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-23378414-1', 'auto');
+  ga('send', 'pageview');
+
+    </script>
+
+
+
+
+
+
+<iframe name="oauth2relay607175589" id="oauth2relay607175589" src="Rechner%20zum%20Dreieck%20-%20Seiten,%20H%C3%B6he,%20Winkel,%20Fl%C3%A4cheninhalt%20berechnen-Dateien/postmessageRelay.html" style="width: 1px; height: 1px; position: absolute; top: -100px;" tabindex="-1" aria-hidden="true"></iframe><table style="width: 137px; display: none; top: 51px; position: absolute; left: 776px;" class="gstl_50 gssb_c" cellspacing="0" cellpadding="0"><tbody><tr><td class="gssb_f"></td><td class="gssb_e" style="width: 100%;"></td></tr></tbody></table></body></html>

@@ -1,0 +1,13 @@
+
+tooth
+        // print a single tooth
+        // - zahnrotation fehlt ...
+
+ellipse2
+	// tangente richtig machen
+	// auf symetrie prüfen, zahnabstand
+	
+clipper
+	// - pfade union oder difference
+		
+= Wenn ich die Rotation der Ellipse und Zähne richtig hinbekomme klappts	
