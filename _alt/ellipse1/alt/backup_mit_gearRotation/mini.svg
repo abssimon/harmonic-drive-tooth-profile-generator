@@ -1,0 +1,3 @@
+<svg id="mySvg">
+  <rect id="myRect" fill="red" width="100px" height="100px"></rect>
+</svg>

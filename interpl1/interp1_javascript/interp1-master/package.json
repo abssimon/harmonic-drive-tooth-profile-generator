@@ -1,0 +1,103 @@
+{
+  "name": "interp1",
+  "version": "1.0.13",
+  "description": "MATLAB-inspired 1-dimensional data interpolation.",
+  "keywords": [
+    "interpolation",
+    "linear",
+    "nearest neighbor",
+    "sampling",
+    "scientific"
+  ],
+  "main": "dist/interp1.umd.js",
+  "module": "dist/interp1.es5.js",
+  "typings": "dist/types/interp1.d.ts",
+  "files": [
+    "dist"
+  ],
+  "author": "Simon Hochholzer <simon@symmetronic.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Symmetronic/interp1"
+  },
+  "bugs": {
+    "url": "https://github.com/Symmetronic/interp1/issues"
+  },
+  "homepage": "https://github.com/Symmetronic/interp1#readme",
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "lint": "tslint --project tsconfig.json -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
+    "prebuild": "rimraf dist",
+    "build": "tsc --module commonjs && rollup -c rollup.config.ts && typedoc --out docs --target es6 --theme minimal --mode file src",
+    "start": "rollup -c rollup.config.ts -w",
+    "test": "jest --coverage",
+    "test:watch": "jest --coverage --watch",
+    "test:prod": "npm run lint && npm run test -- --no-cache"
+  },
+  "lint-staged": {
+    "{src,test}/**/*.ts": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "ts-jest"
+    },
+    "testEnvironment": "node",
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/test/"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 95,
+        "lines": 95,
+        "statements": 95
+      }
+    },
+    "collectCoverageFrom": [
+      "src/*.{js,ts}"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^18.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^10.17.47",
+    "jest": "^26.6.3",
+    "jest-config": "^25.5.4",
+    "lodash.camelcase": "^4.3.0",
+    "prettier": "^1.14.3",
+    "rimraf": "^2.6.2",
+    "rollup": "^2.44.0",
+    "rollup-plugin-sourcemaps": "^0.4.2",
+    "rollup-plugin-typescript2": "^0.26.0",
+    "ts-jest": "^26.4.4",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "tslint-config-standard": "^8.0.1",
+    "typedoc": "^0.17.8",
+    "typescript": "^3.9.7"
+  }
+}

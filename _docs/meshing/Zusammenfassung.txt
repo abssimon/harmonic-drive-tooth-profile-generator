@@ -1,0 +1,10 @@
+
+tooth
+        // besseres design, das foto fehlt ...
+        
+ellipse
+	
+clipper
+	// pfade union oder difference
+		
+= werd nicht schlau aus dem ganzen, drawings und reale Sachen helfen
