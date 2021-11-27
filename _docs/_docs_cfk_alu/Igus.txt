@@ -1,0 +1,34 @@
+Hallo Herr X,
+
+ich habe Wellgetriebe komplett aus Kunstoff gebaut, das in vielen Punkten 
+den Wellgetrieben aus Stahl sehr nahe kommt.
+
+Wirkungsgrad 80%
+Losbrechdrehmoment 6 NM
+Torsionssteifigkeit 0,5 nm/rad
+
+(genaue Berechnung anbei, in einem Dokument)
+
+Ein Vorgängerversion hatte ich in einem Forum vorgestellt, XXX
+um überhaupt einmal Feedback zu diesem Projekt zu bekommen. Die aktuelle 
+Version hat ein Aluminum Gehäuse, eine Komposit Flexspline (CFK+PET GL).
+Inbesondere die Torsionssteifigkeit wurde verbessert.
+
+Auf das Komposit Flexspline habe ich ein Gebrauchsmuster angemeldet.
+XXX Ob dies Bestand haben wird, bei allen anderen Patenten, weiß ich 
+nicht, aber wenn ja wäre es ein Alleinstellungsmerkmal. Denke nicht
+das CFK hier durch andere Kunstoffe zu schlagen ist. 
+
+Ich wohne in Dormagen, nicht weit von Köln entfernt. Wenn es Sie interessiert
+würde ich Ihnen das Wellgetriebe gerne mal zeigen. Ich bin eigentlich 
+Programmierer (angefangen hat alles mit einer SVG-Simulation eines Wellgetriebes, 
+https://www.youtube.com/watch?v=RRt4oXlnvVk) aber würde auch gerne in diesem Bereich 
+tätig sein. Etwas alleine schaffe ich wohl nicht.
+
+Über eine Nachricht würde ich mich sehr freuen. 
+
+Vielen Dank & Mit freundlichen Grüßen
+Askan Simon
+
+
+

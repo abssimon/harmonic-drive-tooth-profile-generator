@@ -1,0 +1,10 @@
+Höhe 848
+Breite 813
+
+Zahnhöhe 9
+
+1mm = 28px
+0,2mm = 6px durchmesser spitze (schönheit only?)
+0,7mm = 20px durchmesser bottom
+    
+    0,2mm Radius Wendeschneidplatte

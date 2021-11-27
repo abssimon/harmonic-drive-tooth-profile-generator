@@ -1,0 +1,15 @@
+python -m moteus_gui.tview
+
+d 	diagnostic
+pos 	position control
+nan	start from every position
+0.2	speed move positive with 0.2 rev/sec
+0.3	torque max 0.3 newton meter
+s0.8	an position 0.8 stoppen
+
+d stop  power aus
+
+-1 +1 range... 
+
+
+wenn sich nix tut, mode fault "d stop" und in range drehen

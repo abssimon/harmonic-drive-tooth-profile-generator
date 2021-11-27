@@ -1,0 +1,84 @@
+
+  ul#nav {
+    margin: 0; padding: 0;
+    margin-top: 0.0em;
+    text-align: left;
+  }
+
+  ul#nav li {
+    list-style: none;
+    float: left;
+    position: relative;
+    margin: 0.0em; padding: 0;
+    margin-top: -0.2em;
+    font-size: 11px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+  }
+
+  * html ul#nav li {  /* Korrektur fuer den IE 5 und 6 */
+    margin-top: -0.4em;
+  }
+
+  *:first-child {  /* Korrektur fuer den IE 7 */
+    margin-top: 0.1em;
+  }
+
+/* Drop-Down Menü-Blöcke */
+
+  ul#nav li ul {
+    margin: 0; padding: 10;
+    position: absolute;
+    top: 1.9em; left: 0.0em;
+    font-weight: normal;
+	background-color: white;
+	border: 1px solid grey;
+  }
+
+  * html ul#nav li ul {  /* Korrektur fuer IE 5.x */
+    left: -1.1em;
+    lef\t: 0.0em;
+  }
+
+  ul#nav li ul li {
+    float: none;
+    display: block;
+    margin-bottom: 0.0em;
+    font-weight: normal;
+    width: 14em;
+    font-size: 11px;
+  }
+
+  ul#nav a, ul#nav span {
+    display: block;
+    padding: 0.3em 0.6em;
+    text-decoration: none;
+    color: black;
+  }
+  * html ul#nav a, * html ul#nav span {  /* nur fuer IE erforderlich */
+    width: 100%;
+    w\idth: 6.4em;
+  }
+  ul#nav a:hover, ul#nav span, li a#aktuell {
+    color: black; background-color: #E2E2E2;
+  }
+  li a#aktuell {  /* aktuelle Rubrik kennzeichnen */
+    color: #B72332; background-color: silver;
+  }
+  ul#nav li ul span {  /* aktuelle Unterseite kennzeichnen */
+    background-color: silver;
+  }
+
+/* Erweiterung zur dynamischen Ein-/Ausblendung */
+
+  ul#nav li>ul {
+    display: none;
+  }
+
+  ul#nav li:hover>ul, ul#nav li>a#aktuell+ul {
+    display: block;
+  }
+
+  /* Workaround fuer den IE 7 */
+  *:first-child+html ul#nav ul {
+    padding-bottom:-0.2em;
+  }
