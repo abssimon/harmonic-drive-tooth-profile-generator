@@ -1,6 +1,0 @@
-1 	× 	3D printed parts.
-8 	× 	MR105-2RS miniature bearings https://www.ebay.co.uk/itm/10pcs-MR105-2RS-Rubber-Sealed-Ball-Bearing-Miniature-Bearing-5-x-10-x-4mm-SK/223289267025?hash=item33fd13d351:g:nosAAOSwf~BZcI5i&frcectupt=true
-1 	× 	Cross Roller Bearing THK RB9016. https://www.aliexpress.com/item/RB9016UUCC0-P5-Crossed-Roller-Bearings-90x130x16mm-Machine-Tool-Bearing-THK-type-High-rigidity-Medical-Device-Bearing/32280483504.html?spm=a2g0s.9042311.0.0.706f4c4dLNO0Sl
-1 	× 	M5 nuts, screws and washers.
-1 	× 	M3 nuts, screws and washers.
-1 	× 	Pololu Universal Aluminum Mounting Hub for 1/4" https://www.pololu.com/product/1993

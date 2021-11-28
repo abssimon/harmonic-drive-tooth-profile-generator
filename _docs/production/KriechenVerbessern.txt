@@ -1,9 +1,0 @@
-kriechen verbessern
-
-- kugellager etwas lockerer - insg weniger stress
-- besser form mit rundungen - biegung wird besser verteilt
-- dünner wandstärke - motor hat es leichter
-- im Vergleich kleiner zähne mit weniger stark ausgeprägter ellipse
-- Stepper anstelle von BLDC, kommen damit klar
-- Material einsetzen, das das etwas besser abkann (10%)
-

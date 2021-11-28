@@ -1,3 +1,0 @@
- service life of 1 million cycles, a load of 1.5Nm and a speed of 6rpm - max ist 4,2 nm
- 
- 8640 pro tag - 115 Tage

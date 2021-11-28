@@ -1,6 +1,0 @@
-
-
-- Motoren nie mit Strom an oder abstecken
-- Manuell und Angeschlossen, nur 1 Umdrehung pro Sekunde
-- Box nur einschalten, wenn LinuxCNC läuft
-- Wenn alle Motoren stoppen, Box neustarten (etwas warten)

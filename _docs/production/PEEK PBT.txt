@@ -1,5 +1,0 @@
-PEEK 	PE-UHMW    0,16 bis 0,2   --- PEEK zahnräder gibts - viel zu teuer 70 EUR für ein cup
-PE-UHMW 	PBT 	0,13 bis 0,16   - PBT 0,75 kriechen --- auch für ein zahnrad https://wittenburggroup.com/products/pbt-2015-329-gear-material-for-high-dimensional-stability/ nirgendwo zu kaufen
-
-pe-uhmw nicht als zahnrad ...
-peek pbt - peek peek - zusätze
