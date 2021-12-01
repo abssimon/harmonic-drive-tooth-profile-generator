@@ -15,6 +15,10 @@ The programm can be called with two flags. mode and config, for example
 
     go run . -mode=ani -config=conf_50_small
 
+or on Windows (without Go installation, with PowerShell ...)
+
+    PS C:\Users\XXX\strainwave> .\strainwave.exe -mode=ani -config=conf_50_small
+
 ##### -mode
 
 - mode=both - is default and will generate a flex and a rigid gear (in "test.svg") 
