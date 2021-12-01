@@ -1,0 +1,18 @@
+{
+"mode": "both",
+"rigid_theets": 102.0,
+"diameter_h": 4.2,
+"diameter_v": 4.035,
+"scale": 7.0,
+"tip_center_x": -0.06,
+"tip_center_y": 1.453,
+"tip_radius": 0.366,
+"tip_stop": 1.56,
+"bottom_center_x": 1.343,
+"bottom_center_y": 0.693,
+"bottom_radius": 0.366,
+"bottom_stop_flex": 1.56,
+"bottom_stop_rigid": 1.56,
+"flex_circumference": 4.117906474475928
+}
+

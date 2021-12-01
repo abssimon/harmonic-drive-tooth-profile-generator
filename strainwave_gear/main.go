@@ -1,22 +1,27 @@
 package main
 
 import (
+    "flag"
+    "log"
     "math"
+    "fmt"
 )
-// hello
+
 
 // Teeth mashing is pretty hard. The only working solution is found here
 // https://commons.wikimedia.org/wiki/File:HarmonicDriveAni.gif
-func toothPosition(ellipseCoordinates []Point, nPoints float64, offset float64) []Point {
+func toothPosition(mode string, ellipseCoordinates []Point, nPoints float64, offset float64) []Point {
 
-    // changes (tiny) of coordinates
+    // small coordinate changes
     sum := make([]float64, len(ellipseCoordinates))
     for i, v := range Diff(ellipseCoordinates) {
         sum[i+1] = math.Hypot(v.X, v.Y)
     }
     cumLen := CumSum(sum)
     circumference := cumLen[len(cumLen)-1]
-    //fmt.Println("diamter for ellipse ", circumference / math.Pi)
+    if mode == "both" {
+        fmt.Println("flex_circumference is ", circumference / math.Pi)
+    }
 
     // location on curcumference, with offset
     pos := LinSpace(0.0, 1.0, int(nPoints)+1)
@@ -52,68 +57,100 @@ func toothPosition(ellipseCoordinates []Point, nPoints float64, offset float64) 
 
 func main() {
 
-    rigidTheets := 102.0 // 1:30: 62.0
-    flexTheets := rigidTheets - 2.0
+    m := flag.String("mode", "", "flag mode (both, flex, rigid, ani) is optional")
+    j := flag.String("config", "", "flag config (*.json) is optional")
+    flag.Parse()
 
-    nFrames :=  1 // for animation 100
-    frameAngles := LinSpace(0.0, -math.Pi, nFrames+1)
-    frameAngles = frameAngles[:len(frameAngles)-1]
+    cf := "conf"
+    mode := "both"
+    if *j != "" {
+        cf = *j
+    }
+    if *m == "flex" {
+        mode = "flex"
+    }
+    if *m == "rigid" {
+        mode = "rigid"
+    }
+    if *m == "ani" {
+        mode = "ani"
+    }
     
-    // draw flex gear
-    diameterH := 4.2
-    diameterV := 4.035 // 1:30: 3.94  
+    conf, err := getConfig(cf + ".json")
+    if err != nil {
+        log.Fatalf("Config konnte nicht gelesen werden: %v\n", err)
+    }
 
-    // sample points for prediction
-    e := Ellipse{Point{0, 0}, diameterH, diameterV}
-    ellipseCoordinates := e.Coordinates(1000)
+    rigidTheets := conf.RigidTheets 
+    flexTheets := rigidTheets - 2.0
 
     gears := []Gear{}
     gear := Gear{}
-    for _, angleWaveGen := range frameAngles {
+
+    if mode == "flex" {
     
-        // position prediction on ellipse
-        angleFlexTeeth := angleWaveGen * (flexTheets - rigidTheets) / flexTheets // * -0,02
-        offset := (-angleWaveGen + angleFlexTeeth) / 2.0 / math.Pi               
-        pos := toothPosition(ellipseCoordinates, flexTheets, offset)
+        // draw undeformed flexgear for production
+        c2 := &Circle{
+            &Point{0.0, 0.0}, 
+            conf.FlexCircumference / 2, // get this mode=both
+            0.0, 
+            math.Pi * 2.0,
+        } 
+        angle := LinSpace(0.0, math.Pi*2.0, int(flexTheets)+1)
+        angle = angle[:len(angle)-1]
+
+        for _, a := range angle {
+            gear.Tooths = append(gear.Tooths, NewTooth(conf, -math.Pi/2.0+a, 1.56, c2.PointInAngle(a)))
+        }
+        gears = append(gears, gear)
+    
+    } else {
+
+
+
+        if mode != "rigid" {
+
+            // draw flexgear
+            nFrames :=  1 
+            if mode == "ani" {
+                nFrames =  100
+            }
+            frameAngles := LinSpace(0.0, -math.Pi, nFrames+1)
+            frameAngles = frameAngles[:len(frameAngles)-1]
+
+            // sample points for prediction
+            e := Ellipse{Point{0, 0}, conf.DiameterH, conf.DiameterV}
+            ellipseCoordinates := e.Coordinates(1000)
+
+            for _, angleWaveGen := range frameAngles {
+
+                // position prediction on ellipse
+                angleFlexTeeth := angleWaveGen * (flexTheets - rigidTheets) / flexTheets 
+                offset := (-angleWaveGen + angleFlexTeeth) / 2.0 / math.Pi               
+                pos := toothPosition(mode, ellipseCoordinates, flexTheets, offset)
+
+                gear = Gear{}
+                for _, p := range pos {
+                    gear.Tooths = append(gear.Tooths, NewTooth(conf, math.Pi+e.TangentByPoint(p), conf.BottomStopFlex, p))
+                }
+                gear.Angle = angleWaveGen
+                gears = append(gears, gear)
+            }
+        }
+
+        // draw rigid gear
+        c := &Circle{&Point{0.0, 0.0}, conf.DiameterH / 2, 0.0, math.Pi * 2.0}
+        angle := LinSpace(0.0, math.Pi*2.0, int(rigidTheets)+1)
+        angle = angle[:len(angle)-1]
 
         gear = Gear{}
-        for _, p := range pos {
-            gear.Tooths = append(gear.Tooths, NewTooth(math.Pi+e.TangentByPoint(p), 1.56, p))
+        for _, a := range angle {
+            gear.Tooths = append(gear.Tooths, NewTooth(conf, -math.Pi/2.0+a, conf.BottomStopRigid, c.PointInAngle(a)))
         }
-        gear.Angle = angleWaveGen
         gears = append(gears, gear)
-    }
-    
-    // draw rigid gear
-    c := &Circle{&Point{0.0, 0.0}, diameterH / 2, 0.0, math.Pi * 2.0}
-    angle := LinSpace(0.0, math.Pi*2.0, int(rigidTheets)+1)
-    angle = angle[:len(angle)-1]
-    
-    gear = Gear{}
-    for _, a := range angle {
-        gear.Tooths = append(gear.Tooths, NewTooth(-math.Pi/2.0+a, 0.95, c.PointInAngle(a)))
-    }
-    gears = append(gears, gear)
-   
 
-    // draw undeformed flexgear for production
-    gears = []Gear{}
-    gear = Gear{}
-   
-    c2 := &Circle{
-        &Point{0.0, 0.0}, 
-        4.117906474475928 / 2, // diameter for "round ellipse" see toothPosition()->circumference
-        0.0, 
-        math.Pi * 2.0,
-    } 
-    angle = LinSpace(0.0, math.Pi*2.0, int(flexTheets)+1)
-    angle = angle[:len(angle)-1]
+
+    }  
         
-    for _, a := range angle {
-        gear.Tooths = append(gear.Tooths, NewTooth(-math.Pi/2.0+a, 1.56, c2.PointInAngle(a)))
-    }
-    gears = append(gears, gear)
-    
-        
-    svg(gears)
+    svg(mode, gears)
 }

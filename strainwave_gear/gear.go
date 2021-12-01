@@ -27,17 +27,13 @@ func (t Tooth) Rotate(a float64) {
 // A s-tooth is definfined by segments of circles. Start and stop are angles, used
 // to define these segments. Only an inner tangent is needed to connect these segments 
 // to a path, because the tooth is symmetrical
-func NewTooth(rotate float64, bottomStop float64, p Point) Tooth {
+func NewTooth(conf *Config, rotate float64, bottomStop float64, p Point) Tooth {
 
-    // tooth definition
-    scale := 10.03 // 1:30: 16.8
-
-    tipCenter := Point{-0.0 * scale, 1.265 * scale}
-    tipRadius := 0.506 * scale
-    tipStop := 1.56 // 90 grad
-    bottomCenter := Point{1.305 * scale, 0.985 * scale}
-    bottomRadius := 0.506 * scale
-    //bottomStop := 1.56 // 90 grad
+    tipCenter := Point{conf.TipCenterX * conf.Scale, conf.TipCenterY * conf.Scale}
+    tipRadius := conf.TipRadius * conf.Scale
+    tipStop := conf.TipStop 
+    bottomCenter := Point{conf.BottomCenterX * conf.Scale, conf.BottomCenterY * conf.Scale}
+    bottomRadius := conf.BottomRadius * conf.Scale
     
     tooth := Tooth{
         &Circle{&Point{-bottomCenter.X, bottomCenter.Y}, bottomRadius, 0.0, 0.0},

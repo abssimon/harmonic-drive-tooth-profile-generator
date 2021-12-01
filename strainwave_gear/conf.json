@@ -1,0 +1,16 @@
+{
+"rigid_theets": 102.0,
+"diameter_h": 4.2,
+"diameter_v": 4.035,
+"scale": 10.03,
+"tip_center_x": -0.0,
+"tip_center_y": 1.265,
+"tip_radius": 0.506,
+"tip_stop": 1.56,
+"bottom_center_x": 1.305,
+"bottom_center_y": 0.985,
+"bottom_radius": 0.506,
+"bottom_stop_flex": 1.56,
+"bottom_stop_rigid": 0.95,
+"flex_circumference": 4.117906474475928
+}
