@@ -1,4 +1,4 @@
-# Strain Wave/Harmonic Drive Gear Generator
+# Strain Wave/Harmonic Drive - Gear Generator
 
 With this generator, you can develop and simulate tooth profiles for a harmonic drive. These profiles can be imported into CAD programs for further use.
 
@@ -26,13 +26,13 @@ The programm can be called with two flags. mode and config, for example
 
 The default file is "conf.json", but you can specifiy here a different one.
 
-### Gear Configuration 
+### Gear Definition 
 
-A single gear tooth is defined by two circles (which are mirrored). A tip and a bottom circle with a center point (x, y) and a radius. The circles are connected with a tangent on one end, and the other end they stop in a certain direction.
+A single gear tooth is defined by two circles (which are mirrored). A tip and a bottom circle with a center point (x, y) and a radius. The circles are connected with a tangent at one end, and at the other end, they stop in a certain direction.
 
 [![N|Solid](https://retwin.com/github/teeth_circles.jpg)](https://retwin.com/github/teeth_circles.jpg)
 
-Corresponding to this, there are variables in the json file
+Referring to this, there are variables in the config file
 
 	"tip_center_x": -0.0,   // both tip points are together, so a round tip...
 	"tip_center_y": 1.265,
@@ -45,7 +45,7 @@ Corresponding to this, there are variables in the json file
 	"bottom_stop_flex": 1.56,
 	"bottom_stop_rigid": 0.95, // in this case, the stop for the rigid gear is different than in flex
 
-Scale factor will bring the tooths to the correct size
+Scale factor will bring the teeth to the correct size
 
 	"scale": 10.03
 	
@@ -58,11 +58,11 @@ The shape of the ellipse is defined by
 	"diameter_h": 4.2,
 	"diameter_v": 4.035,
 
-For example, when you decrease the teeth height, you can increase diameter_v. So more teeths will have contact during rotation. You can check this in detail with --mode=both or --mode=ani. Note, when you change the diameter, you also need to update "flex_circumference" in the config
+For example, when you decrease the teeth height, you can increase diameter_v. So more teeths will have contact during rotation. You can check this in detail with --mode=both. Note, when you change the diameter, you also need to update "flex_circumference" 
 
 	"flex_circumference": 4.117906474475928
 
-When you run --mode=both, the new circumference is shown, copy it to your config file. The right value here is very important for -mode=flex. 
+When you run --mode=both, the circumference is always shown, copy the new value to your config file. The right value is very important for -mode=flex. 
 
 
 
