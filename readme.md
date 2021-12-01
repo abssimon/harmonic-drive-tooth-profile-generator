@@ -5,9 +5,9 @@ With this generator, you can develop and simulate tooth profiles for a harmonic 
 
 ### Examples:
 
-[50 Tooth Profile](https://retwin.com/github/test1.html)
-[30 Tooth Profile](https://retwin.com/github/test2.html)
-[50 Tooth Profile (small)](https://retwin.com/github/test3.html) (a slotted plastic version of this profile can be seen [here](https://www.youtube.com/watch?v=iLJkPBIP0VU))
+- [50 Tooth Profile](https://retwin.com/github/test1.html)
+- [30 Tooth Profile](https://retwin.com/github/test2.html)
+- [50 Tooth Profile (small)](https://retwin.com/github/test3.html) (a slotted plastic version of this profile can be seen [here](https://www.youtube.com/watch?v=iLJkPBIP0VU))
  
 ### General Usage
 
