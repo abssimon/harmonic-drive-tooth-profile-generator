@@ -17,10 +17,10 @@ The programm can be called with two flags. mode and config, for example
 
 ##### -mode
 
--mode=both - is default and will generate a flex and a rigid gear (in "test.svg") 
--mode=ani - will generate the gear animation (in "test.html")
--mode=flex - will generate a round "undeformed" flexgear (in "test.svg")
--mode=rigid - will generate the a rigid gear (in "test.svg")
+- mode=both - is default and will generate a flex and a rigid gear (in "test.svg") 
+- mode=ani - will generate the gear animation (in "test.html")
+- mode=flex - will generate a round "undeformed" flexgear (in "test.svg")
+- mode=rigid - will generate the a rigid gear (in "test.svg")
 
 ##### -config
 
