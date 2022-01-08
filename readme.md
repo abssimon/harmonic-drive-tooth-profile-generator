@@ -1,4 +1,4 @@
-# Strain Wave/Harmonic Drive - Gear Generator
+# Strain Wave/Harmonic Drive - Tooth Profile Generator
 
 With this generator, you can develop and simulate tooth profiles for a harmonic drive. These profiles can be imported into CAD programs for further use.
 
